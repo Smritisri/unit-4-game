@@ -2,8 +2,11 @@
 <html>
     <head>
         <title>Crystals Collector</title>
+        <link rel="stylesheet" href="assets/css/reset.css">
         <link rel="stylesheet" href="assets/css/styles.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
         <script type="text/javascript" src="assets/javascript/game.js"></script>
+        
     </head>
     <body>
         <h1>Crystals Collector!</h1>
@@ -14,9 +17,9 @@
             <p>The value of each crystal is hidden from you until you click on it.</p>
             <p>Each time when the game starts, the game will change the values of each crystal</p>
         </div>
-        <div>Random Number</div>
-        <div><p>Wins</p>
-            <p>Losses</p>
+        <div>Random Number <span id="goal"></span></div>
+        <div><p>Wins: <span id="win"></span></p>
+            <p>Losses: <span id="loss"></span></p>
         </div>
         <div>Gems
             <img id="button-red" class="resize" src="assets/images/redGem.png">
@@ -25,7 +28,7 @@
             <img id="button-green"class="resize"src="assets/images/greenGem.png">
         </div>
         <div>Total Score</div>
-        <div>Actual Score</div>
+        <div>Actual Score <span id="current"></span></div>
     </body>
 </html>
 
